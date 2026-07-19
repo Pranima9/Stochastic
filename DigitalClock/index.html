@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMT Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="theme-switcher" role="toolbar" aria-label="Theme switcher">
+        <button class="theme-btn active" data-theme="dark" type="button">Dark</button>
+        <button class="theme-btn" data-theme="light" type="button">Light</button>
+        <button class="theme-btn" data-theme="neon" type="button">Neon</button>
+    </div>
+
+    <!-- Added a semantic main wrapper and panel structure so the layout can scale smoothly across screen sizes -->
+    <main class="container">
+        <div class="clock-box">
+            <div class="clock">
+                <div class="time" id="timeDisplay">00:00:00</div>
+                <div class="period" id="amPm">AM</div>
+                <div class="gmt-selector">
+                    <label for="gmtOffset">Select GMT Offset:</label>
+                    <select id="gmtOffset" onchange="updateGMT(this.value)">
+                        <option value="-12">GMT -12:00</option>
+                        <option value="-11">GMT -11:00</option>
+                        <option value="-10">GMT -10:00</option>
+                        <option value="-9">GMT -09:00</option>
+                        <option value="-8">GMT -08:00</option>
+                        <option value="-7">GMT -07:00</option>
+                        <option value="-6">GMT -06:00</option>
+                        <option value="-5">GMT -05:00</option>
+                        <option value="-4">GMT -04:00</option>
+                        <option value="-3">GMT -03:00</option>
+                        <option value="-2">GMT -02:00</option>
+                        <option value="-1">GMT -01:00</option>
+                        <option value="0" selected>GMT +00:00 (UTC)</option>
+                        <option value="1">GMT +01:00</option>
+                        <option value="2">GMT +02:00</option>
+                        <option value="3">GMT +03:00</option>
+                        <option value="4">GMT +04:00</option>
+                        <option value="5">GMT +05:00</option>
+                        <option value="6">GMT +06:00</option>
+                        <option value="7">GMT +07:00</option>
+                        <option value="8">GMT +08:00</option>
+                        <option value="9">GMT +09:00</option>
+                        <option value="10">GMT +10:00</option>
+                        <option value="11">GMT +11:00</option>
+                        <option value="12">GMT +12:00</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="stopwatch-box">
+            <div class="stopwatch">
+                <div class="stopwatch-time" id="stopwatchDisplay">00:00:00</div>
+                <div class="buttons">
+                    <button onclick="startStopwatch()">Start</button>
+                    <button onclick="stopStopwatch()">Stop</button>
+                    <button onclick="resetStopwatch()">Reset</button>
+                    <button onclick="recordLap()">Lap</button>
+                </div>
+                <div class="laps">
+                    <ul id="lapsList"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
