@@ -37,3 +37,10 @@
 //     console.log(a)
 // }
 // console.log(a)
+
+// ' ', " ", ` ` -> STRING
+// 12, 12.3, , -6 -> NUMBERS
+// true, false -> boolean
+// jani jani narakheko but paxi rakhne value -> null
+// by default milne value, aafule narakheko -> undefined 
+// symbol -> 
