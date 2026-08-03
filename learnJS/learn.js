@@ -16,7 +16,7 @@
 
 // types in js
 //    primitives(data types) = number, string , null, undefined, boolean 
-//    and reference = [], (), {}
+//    and reference = [array], (function), {object} 
 //    
 
 
@@ -43,4 +43,9 @@
 // true, false -> boolean
 // jani jani narakheko but paxi rakhne value -> null
 // by default milne value, aafule narakheko -> undefined 
-// symbol -> 
+
+//  "=" pixadi kunai pani bracket {}[]() aayo vane those are reference data types 
+
+let a = {
+    name: "Pranima"
+};
