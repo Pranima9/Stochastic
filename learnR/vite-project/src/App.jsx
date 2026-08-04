@@ -6,6 +6,8 @@ function App() {
         <>
            <Profile/>
            <Hero/>
+           <About/>
+           <kdfjgdbvsd/>
         </>
     );
 }
