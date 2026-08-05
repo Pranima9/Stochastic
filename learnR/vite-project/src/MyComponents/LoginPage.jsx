@@ -1,15 +1,12 @@
 // import React from 'react'
-import backgroundImage from "../assets/blur.png"
+import backgroundImage from "../assets/hero.png"
 
 const LoginPage = () => {
   return (
     <>
-    {/* <style>
-        backgroundImage
-    </style> */}
     <div id="background" className="flex h-screen items-center justify-center ">
         <form className="flex flex-col justify gap-2 justify-center w-[30vw] border border-blue-400  p-5 rounded-xl ">
-            {/* <img src="" alt="loading..." /> */}
+            <img src={backgroundImage} className="w-80"/>
             <h1 className="text-3xl font-bold text-red-500 flex mb-5">Login </h1>
             <input type="email" className="border-2 border-red-300 placeholder:text-sm p-1 rounded-md" placeholder="Enter your email address"/>
             <input type="password" className="border-2 border-red-300 placeholder:text-sm p-1 rounded-md" placeholder="Enter your password"/>
