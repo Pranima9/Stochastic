@@ -1,8 +1,10 @@
-function Chat (props) {
+function Chat ({name, message, time}) {
   return (
-    <div>
-        <h2>{props.name}</h2>
-        <p>{}</p>
-    </div>
+    <>
+        <h2>{name}</h2>
+        <p>{message}</p>
+        <small>{time}</small>
+    </>
   )
 } export default Chat;
+
