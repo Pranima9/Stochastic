@@ -4,6 +4,7 @@ import About from "./MyComponents/about";
 import Header from "./MyComponents/header";
 import Contact from "./MyComponents/contact";
 import Skill from "./MyComponents/skills";
+import Chat from "./MyComponents/chat";
 
 import LoginPage from "./MyComponents/LoginPage";
 
@@ -19,6 +20,7 @@ function App() {
            <Skill/>
 
            <LoginPage/>
+           <Chat/>
            
            
         </>
