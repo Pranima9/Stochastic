@@ -62,17 +62,31 @@
 
 // export default App;
 
-import { useState } from "react";
+
+// [][][][][ CREATED COUNTING BUTTON USING USESTATE ][][[[[[[]]]]]]
+
+// import { useState } from "react";
+
 
 function App() {
-  let count = 0;
+  // const [likes, setlikes] = useState(0);
+
+  function sayHello(){
+    alert("Hello!")
+  }
 
   return (
-    <>
-      <h1>{count}</h1>
-      <button>Increase</button>
-    </>
+   <>
+      {/* <h1>{likes}</h1>
+      <button onClick={()=>setlikes(likes+1)}> like </button> */}
+   
+      
+      <button onClick={sayHello}>Click me</button>  
+      {/* yaha hamile "sayHello()" ma () use nagareko chy hamilai refresh garne bittikai alert message chahiyeko haina so..... clcick garesi matra dekhauna lai () halnuhunna */}
+   
+   </> 
   );
+  
 } export default App;
 
 
