@@ -63,31 +63,48 @@
 // export default App;
 
 
+
+
 // [][][][][ CREATED COUNTING BUTTON USING USESTATE ][][[[[[[]]]]]]
 
 // import { useState } from "react";
 
 
-function App() {
-  // const [likes, setlikes] = useState(0);
+// function App() {
+//   // const [likes, setlikes] = useState(0);
 
-  function sayHello(){
-    alert("Hello!")
-  }
+//   function sayHello(){
+//     alert("Hello!")
+//   }
 
-  return (
-   <>
-      {/* <h1>{likes}</h1>
-      <button onClick={()=>setlikes(likes+1)}> like </button> */}
+//   return (
+//    <>
+//       {/* <h1>{likes}</h1>
+//       <button onClick={()=>setlikes(likes+1)}> like </button> */}
    
       
-      <button onClick={sayHello}>Click me..</button>  
-      {/* yaha hamile "sayHello()" ma () use nagareko chy hamilai refresh garne bittikai alert message chahiyeko haina so..... clcick garesi matra dekhauna lai () halnuhunna */}
+//       <button onClick={sayHello}>Click me..</button>  
+//       {/* yaha hamile "sayHello()" ma () use nagareko chy hamilai refresh garne bittikai alert message chahiyeko haina so..... clcick garesi matra dekhauna lai () halnuhunna */}
         
-      <button onClick={()=> {alert("Hellooooo!")}}>click hereeee</button>
-   </> 
-  );
+//       <button onClick={()=> {alert("Hellooooo!")}}>click hereeee</button>
+//    </> 
+//   );
   
-} export default App;
+// } export default App;
 
 
+
+import { useState } from "react";
+
+function Likes(){
+
+const [likes, setLikes]= useState(0);
+
+  return(
+    <>
+      <button onClick={()=> setLikes(likes+1) }> like </button>
+      <p>{likes}</p>
+    </>
+  )
+
+} export default Likes;
