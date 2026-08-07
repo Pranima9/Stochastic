@@ -94,17 +94,45 @@
 
 
 
+// import { useState } from "react";
+
+// function App(){
+
+//   const [name, setName] = useState("Enter your name")
+
+// // const [likes, setLikes]= useState(0); {/* useState paxi () ma "number" matra hunuparxa vanera compulasory xaina. Could be boolean, string,  arrays anything */}
+
+//   return(
+//     <>
+//       {/* <button onClick={()=> setLikes(likes + 1) }> Like </button>
+//       <button onClick={()=> setLikes(likes - 1) }> Unlike </button>
+//       <p>{likes}</p> */}
+
+//       <input type="text" name="" id="" />
+//       <button onClick={()=> setName(name)}> Okay </button>
+
+//     </>
+//   )
+
+// } export default App;
+
+
+// []][[][][[[[[[  NAME DISPLAY ]]]]]]]
+
 import { useState } from "react";
 
-function Likes(){
+function App(){
 
-const [likes, setLikes]= useState(0);
+  const [name, setName] = useState("")
 
   return(
     <>
-      <button onClick={()=> setLikes(likes+1) }> like </button>
-      <p>{likes}</p>
+      
+      <p>Your name is: {name}</p>
+      <input onChange={()=> setName({name})} />
+      <br />
+      <button onClick={()=> setName("Pranima")}> Okay </button>
     </>
   )
 
-} export default Likes;
+} export default App;
