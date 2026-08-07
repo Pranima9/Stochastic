@@ -81,9 +81,10 @@ function App() {
       <button onClick={()=>setlikes(likes+1)}> like </button> */}
    
       
-      <button onClick={sayHello}>Click me</button>  
+      <button onClick={sayHello}>Click me..</button>  
       {/* yaha hamile "sayHello()" ma () use nagareko chy hamilai refresh garne bittikai alert message chahiyeko haina so..... clcick garesi matra dekhauna lai () halnuhunna */}
-   
+        
+      <button onClick={()=> {alert("Hellooooo!")}}>click hereeee</button>
    </> 
   );
   
