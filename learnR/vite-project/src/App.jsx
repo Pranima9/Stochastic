@@ -119,19 +119,42 @@
 
 // []][[][][[[[[[  NAME DISPLAY ]]]]]]]
 
-import { useState } from "react";
+// import { useState } from "react";
+
+// function App(){
+
+//   const [name, setName] = useState("")
+
+//   return(
+//     <>
+      
+//       <p>Your name is: {name}</p>
+//       <input onChange={(event)=> setName(event.target.value)} /> 
+//        {/* event => k change vayo // event.target => kaha change vayo // event.target.value => change vayesi ko value */}
+//       <br />
+//       {/* <button onClick={()=> setName("Pranima")}> Okay </button> */}
+//     </>
+//   )
+
+// } export default App;
+
+
+
+
+// [][][][][[[[[[[[[ conditional Rendering ]]]]]]]]]
+
+ import { useState } from "react";
 
 function App(){
 
-  const [name, setName] = useState("")
+  const [isLogggedIn, setIsLoggedIn] = useState(false)
 
   return(
     <>
-      
-      <p>Your name is: {name}</p>
-      <input onChange={()=> setName({name})} />
-      <br />
-      <button onClick={()=> setName("Pranima")}> Okay </button>
+      {isLogggedIn? "welcome" : "please login"}
+      <button onClick={()=> setIsLoggedIn(true)} className="bg-blue-400 text-white font-bold h-10 rounded-lg p=[2px]">
+        Login
+      </button>
     </>
   )
 
