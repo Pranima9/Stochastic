@@ -151,7 +151,10 @@ function App(){
 
   return(
     <>
-      {isLogggedIn? "welcome" : "please login"}
+      <h1>
+        {isLogggedIn? "welcome" : "please login"}
+      </h1>
+      
       <button onClick={()=> setIsLoggedIn(true)} className="bg-blue-400 text-white font-bold h-10 rounded-lg p=[2px]">
         Login
       </button>
