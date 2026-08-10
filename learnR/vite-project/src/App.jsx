@@ -222,39 +222,68 @@
 
 // } export default App;
 
+// function App(){
+
+//   const students = [
+//       {
+//         name: "Aashish Sapkota",
+//         age: "23",
+//         course: "IT"
+//       }, 
+//       {
+//         name: "Shireen Sharma",
+//         age: "25",
+//         course: "Science"
+//       }, 
+//       {
+//         name: "Preeti Basnet",
+//         age: "21",
+//         course: "Law"
+//       }, 
+//     ];
+
+//   return(
+//     <>
+//       <h1>Students</h1>
+
+//       {students.map((student) => (
+//         <div key={student.name}>
+//           <h2>{student.name}</h2>
+//           <p> Age: {student.age}</p>
+//           <p> Course: {student.course}</p>
+//         </div>
+//       ))}
+
+//     </>
+//   )
+
+// } export default App;
+
+
+
+// [[[[[[[[[[[[ ARRAYS + STATE ]]]]]]]]]]]]
+
+import { useState } from "react";
+
 function App(){
 
-  const students = [
-      {
-        name: "Aashish Sapkota",
-        age: "23",
-        course: "IT"
-      }, 
-      {
-        name: "Shireen Sharma",
-        age: "25",
-        course: "Science"
-      }, 
-      {
-        name: "Preeti Basnet",
-        age: "21",
-        course: "Law"
-      }, 
-    ];
+  const [tasks, setTasks] = useState([
+    "Learn React",
+    "Learn JS"
+  ]);
+
+  const [newTask, SetNewTask] = useState("")
 
   return(
     <>
-      <h1>Students</h1>
-
-      {students.map((student) => (
-        <div key={student.name}>
-          <h2>{student.name}</h2>
-          <p> Age: {student.age}</p>
-          <p> Course: {student.course}</p>
-        </div>
+      {tasks.map((task) => (
+      <p key={task}> {task} </p>
       ))}
 
-    </>
-  )
+      <button onClick={()=> setTasks([...tasks, "Learn Node.js"])}>
+        Add Task
+      </button>
+    </> 
+  );
 
 } export default App;
