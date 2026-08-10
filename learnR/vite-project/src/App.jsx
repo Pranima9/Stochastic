@@ -280,7 +280,10 @@ function App(){
       <p key={task}> {task} </p>
       ))}
 
-      <button onClick={()=> setTasks([...tasks, "Learn Node.js"])}>
+      <input onChange={(event)=> SetNewTask(event.target.value)} />   
+      {/*When the input changes, take whatever the user typed and save it in newTask*/}
+
+      <button onClick={()=> setTasks([...tasks, newTask])}>
         Add Task
       </button>
     </> 
