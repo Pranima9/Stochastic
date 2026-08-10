@@ -167,3 +167,22 @@
 //   )
 
 // } export default App;
+
+
+
+
+// [][][[[[[[[[ ARRAYS ]]]]]]]]
+
+function App(){
+
+  const fruits = ["Apple", "Banana", "Mango"];
+
+  return(
+    <>
+      {fruits.map((fruit) => 
+      <p>{fruit}</p>
+      )}      
+    </>
+  )
+
+} export default App;
