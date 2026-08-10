@@ -173,15 +173,87 @@
 
 // [][][[[[[[[[ ARRAYS ]]]]]]]]
 
+// function App(){
+
+//   // const fruits = ["Apple", "Banana", "Mango"];
+//   // const foods = ["Pizza", "Momo", "Burger"];
+
+//   const phones = [
+//       {
+//         brand: "Samsung",
+//         model: "S25",
+//         price: "250000"
+//       }, 
+//       {
+//         brand: "Apple",
+//         model: "iPhone15pro",
+//         price: "250000"
+        
+//       },
+//       {
+//         brand: "Google",
+//         model: "Pixel",
+//         price: "250000"
+//       }
+//     ];
+
+//   return(
+//     <>
+//       {/* {fruits.map((fruit) => (
+//       <p key = {fruit}>{fruit}</p>
+//       ))}       */}
+
+//       {/* {foods.map((food) => (
+//         <p key={food}>   {foods}   </p> 
+//       ))} */}
+
+//       <h1>Phones</h1>
+
+//       {phones.map((phone) => (
+//         <div key={phone.model}>
+//           <h2>{phone.brand}</h2>
+//           <p> Model: {phone.model}</p>
+//           <p> Price: {phone.price}</p>
+//         </div>
+//       ))}
+
+//     </>
+//   )
+
+// } export default App;
+
 function App(){
 
-  const fruits = ["Apple", "Banana", "Mango"];
+  const students = [
+      {
+        name: "Aashish Sapkota",
+        age: "23",
+        course: "IT"
+      }, 
+      {
+        name: "Shireen Sharma",
+        age: "25",
+        course: "Science"
+      }, 
+      {
+        name: "Preeti Basnet",
+        age: "21",
+        course: "Law"
+      }, 
+    ];
 
   return(
     <>
-      {fruits.map((fruit) => 
-      <p>{fruit}</p>
-      )}      
+      <h1>Students</h1>
+
+      {students.map((student) => (
+        <div key={student.name}>
+          <h2>{student.name}</h2>
+          <p> Age: {student.age}</p>
+          <p> Course: {student.course}</p>
+        </div>
+      ))}
+
     </>
   )
 
