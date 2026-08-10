@@ -117,6 +117,7 @@
 // } export default App;
 
 
+
 // []][[][][[[[[[  NAME DISPLAY ]]]]]]]
 
 // import { useState } from "react";
@@ -141,28 +142,28 @@
 
 
 
-// [][][][][[[[[[[[[ conditional Rendering ]]]]]]]]]
+// [][][][][[[[[[[[[ conditional Rendering LOGIN LOGOUT BUTTON]]]]]]]]]
 
- import { useState } from "react";
+//  import { useState } from "react";
 
-function App(){
+// function App(){
 
-  const [isLogggedIn, setIsLoggedIn] = useState(false)
+//   const [isLogggedIn, setIsLoggedIn] = useState(false)
 
-  return(
-    <>
-        {isLogggedIn? (
-        <button 
-          onClick={()=> setIsLoggedIn(false)} 
-          className="bg-red-400 text-white font-bold h-10 rounded-lg p-2 ">
-          Logout
-        </button>
-        ) : (
-        <button onClick={()=> setIsLoggedIn(true)} className="bg-blue-400 text-white font-bold h-10 rounded-lg p-2 ">
-          Login
+//   return(
+//     <>
+//         {isLogggedIn? (
+//         <button 
+//           onClick={()=> setIsLoggedIn(false)} 
+//           className="bg-red-400 text-white font-bold h-10 rounded-lg p-2 ">
+//           Logout
+//         </button>
+//         ) : (
+//         <button onClick={()=> setIsLoggedIn(true)} className="bg-blue-400 text-white font-bold h-10 rounded-lg p-2 ">
+//           Login
           
-        </button>)}
-    </>
-  )
+//         </button>)}
+//     </>
+//   )
 
-} export default App;
+// } export default App;
