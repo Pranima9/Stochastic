@@ -1,6 +1,31 @@
 // import React from 'react'
 import backgroundImage from "../assets/hero.png"
 
+// import { useState } from "react";
+
+// function LoginBtn(){
+
+//   const [isLogggedIn, setIsLoggedIn] = useState(false)
+
+//   return(
+//     <>
+//         {isLogggedIn? (
+//         <button 
+//           onClick={()=> setIsLoggedIn(false)} 
+//           className="bg-red-400 text-white font-bold h-10 rounded-lg p-2 ">
+//           Logout
+//         </button>
+//         ) : (
+//         <button onClick={()=> setIsLoggedIn(true)} className="bg-blue-400 text-white font-bold h-10 rounded-lg p-2 ">
+//           Login
+          
+//         </button>)}
+//     </>
+//   )
+
+// } export default LoginBtn;
+
+
 const LoginPage = () => {
   return (
     <>
@@ -18,5 +43,4 @@ const LoginPage = () => {
     </>
   )
 }
-
 export default LoginPage;
