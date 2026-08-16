@@ -6,7 +6,7 @@
 // import Skill from "./MyComponents/skills";
 // import Chat from "./MyComponents/chat";
 
-// // import LoginPage from "./MyComponents/LoginPage";
+// import LoginPage from "./MyComponents/LoginPage";
 
 // function App() {
 //     return(
@@ -17,13 +17,13 @@
 //            <Hero/>
 //            <About/>
 //            <Contact/>
-//            <Skill/>
+//            <Skill/> */}
 
-//            <LoginPage/> */}
-//            <Chat
+//            <LoginPage/>
+//            {/* <Chat
 //            name = "Pranss"
 //            message = "hi"
-//            time = "3:42am"/>          
+//            time = "3:42am"/>           */}
 //         </>
 //     );
 // }
@@ -34,9 +34,6 @@
 
 
 // [][][][][][][][]
-
-
-
 
 // function Car(props) {
 //   return (
@@ -71,7 +68,7 @@
 
 
 // function App() {
-//   // const [likes, setlikes] = useState(0);
+//   const [likes, setlikes] = useState(0);
 
 //   function sayHello(){
 //     alert("Hello!")
@@ -79,8 +76,8 @@
 
 //   return (
 //    <>
-//       {/* <h1>{likes}</h1>
-//       <button onClick={()=>setlikes(likes+1)}> like </button> */}
+//       <h1>{likes}</h1>
+//       <button onClick={()=>setlikes(likes+1)}> like </button>
    
       
 //       <button onClick={sayHello}>Click me..</button>  
@@ -100,13 +97,12 @@
 
 //   const [name, setName] = useState("Enter your name")
 
-// // const [likes, setLikes]= useState(0); {/* useState paxi () ma "number" matra hunuparxa vanera compulasory xaina. Could be boolean, string,  arrays anything */}
+// const [likes, setLikes]= useState(0); {/* useState paxi () ma "number" matra hunuparxa vanera compulasory xaina. Could be boolean, string,  arrays anything */}
 
 //   return(
 //     <>
-//       {/* <button onClick={()=> setLikes(likes + 1) }> Like </button>
-//       <button onClick={()=> setLikes(likes - 1) }> Unlike </button>
-//       <p>{likes}</p> */}
+//       <button onClick={()=> setLikes(likes + 1) }> Like </button>
+//       <p>{likes}</p>
 
 //       <input type="text" name="" id="" />
 //       <button onClick={()=> setName(name)}> Okay </button>
@@ -143,6 +139,7 @@
 
 
 // [][][][][[[[[[[[[ conditional Rendering LOGIN LOGOUT BUTTON]]]]]]]]]
+
 
 //  import { useState } from "react";
 
@@ -274,6 +271,7 @@ function App(){
 
   const [newTask, SetNewTask] = useState("")
 
+  
   return(
     <>
       {tasks.map((task) => (
@@ -288,5 +286,6 @@ function App(){
       </button>
     </> 
   );
+
 
 } export default App;
