@@ -1,30 +1,20 @@
 
 // [[[[[[[[[ + - reset ]]]]]]]]]
 
-import { useState } from "react";
+// import { useState } from "react";
 
-function App(){
+// function App(){
 
-  const [tasks, setTasks] = useState([
-    "Learn React",
-    "Learn JS"
-  ]);
+//   const [count, setCount] = useState(0);
 
-  const [newTask, SetNewTask] = useState("")
+//   return(
+//     <>
+//       Count: {count}
+//     </>
+//   );
 
-  return(
-    <>
-      {tasks.map((task) => (
-      <p key={task}> {task} </p>
-      ))}
+// } export default App;
 
-      <input onChange={(event)=> SetNewTask(event.target.value)} />   
-      {/*When the input changes, take whatever the user typed and save it in newTask*/}
 
-      <button onClick={()=> setTasks([...tasks, newTask])}>
-        Add Task
-      </button>
-    </>
-  );
 
-} export default App;
+// to manage
