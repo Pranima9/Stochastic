@@ -288,22 +288,32 @@
 
 // } export default App;
 
+
+
 // [[[[[[[[[ + - reset ]]]]]]]]]
 
 // import { useState } from "react";
 
-// function App(){
-
+// function App() {
 //   const [count, setCount] = useState(0);
 
-//   return(
+//   return (
 //     <>
-//       Count: {count}
+//       <h1>Count: {count}</h1>
+
+//       <button onClick={() => setCount(count + 1)}>
+//         +
+//       </button>
+
+//       <button onClick={() => setCount(count - 1)}>
+//         -
+//       </button>
+
+//       <button onClick={() => setCount(0)}>
+//         Reset
+//       </button>
 //     </>
 //   );
+// }
 
-// } export default App;
-
-
-
-// to manage
+// export default App;
